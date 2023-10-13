@@ -8,7 +8,10 @@
  * Usage:
  * const message = generateMessage("Jack", 25); // message will be "Hey Jack, at 25, you are in the prime of your life!"
  */
-
+function generateMessage(name, age){
+    let message = "Hey "+ name + ", at " + age + ", you are in the prime of your life!";
+    return message;
+}
 
 /**
  * This function capitalizes the first letter of every word in a sentence.
@@ -19,7 +22,14 @@
  * Usage:
  * const title = titleCase("hello world"); // title will be "Hello World"
  */
+function titleCase(sentence){
+    const array = sentence.split(" ");
+    for (let i = 0; i < sentence.length; i++){
+        array[i] = array[i].charAt(0).toUpperCase() + array[i].substring(1);
+    }
+    return array.join(" ");
 
+}
 
 /**
  * This function returns the sum of a range of numbers in an array.
@@ -31,7 +41,13 @@
  * Usage:
  * const sum = sumOfRange(1, 4); // sum will be 10
  */
-
+function sumOfRange(start, end){
+        let sum = 0;
+        for (let i = start; i<=end; i++){
+            sum = sum + i;
+        }
+        return sum;
+}
 
 
 

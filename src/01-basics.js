@@ -8,7 +8,7 @@
  * console.log(coolestTeacher); // Benjamin
  */
 function getCoolestTeacher() {
-
+    return "Benjamin";
 }
 
 /**
@@ -24,7 +24,8 @@ function getCoolestTeacher() {
  * const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
  */
 function multiplyAndAdd(a, b, c) {
-
+    let anotherResult = a*b+c
+    return anotherResult;
 }
 
 /**
@@ -38,7 +39,8 @@ function multiplyAndAdd(a, b, c) {
  * const anotherResult = determineType(42); // anotherResult will be "number"
  */
 function determineType(value) {
-
+    let anotherResult = typeof value
+    return anotherResult;
 }
 
 /**
@@ -53,7 +55,7 @@ function determineType(value) {
  */
 
 function concatenateStringsWithSpace(a, b) {
-
+    return a + " " + b;
 }
 
 
@@ -71,6 +73,6 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-    
+    return str.toUpperCase() + ":)";
 }
 
